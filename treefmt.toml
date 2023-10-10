@@ -1,0 +1,13 @@
+[formatter.cabal]
+command = "cabal-fmt"
+options = ["-i"]
+includes = ["*.cabal"]
+
+[formatter.haskell]
+command = "fourmolu"
+options = ["-i"]
+includes = ["*.hs"]
+
+[formatter.nix]
+command = "nixpkgs-fmt"
+includes = ["*.nix"]

@@ -1,0 +1,25 @@
+cabal-version: 2.4
+name:          nixos-installer
+version:       0.1.0
+author:        Pierre Dal-Pra
+copyright:     (c) 2023 Pierre Dal-Pra
+license:       MIT
+maintainer:    github@pdalpra.me
+
+executable nixos-installer
+  hs-source-dirs:     src
+  default-language:   Haskell2010
+  ghc-options:        -Wall
+  default-extensions: OverloadedRecordDot
+  main-is:            Main.hs
+  other-modules:      Config
+  build-depends:
+    , base                ^>=4.16.0
+    , cmdargs             ^>=0.10
+    , directory           ^>=1.3.6
+    , extra               ^>=1.7
+    , filepath            ^>=1.4
+    , h-gpgme             ^>=0.6.0
+    , process             ^>=1.6.0
+    , string-interpolate  ^>=0.3.0
+    , temporary           ^>=1.3
